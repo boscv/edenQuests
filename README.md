@@ -17,7 +17,6 @@ HWID necessário para ativação.
 - [⚠️ O que não fazer](#%EF%B8%8F-o-que-n%C3%A3o-fazer)
 - [📢 Informações e avisos](#-informa%C3%A7%C3%B5es-e-avisos)
 - [🗃️ Estrutura da pasta](#%EF%B8%8F-estrutura-da-pasta)
-- [💵 Investimento](#-investimento)
 - [🚀 Implementações futuras](#-implementa%C3%A7%C3%B5es-futuras)
 
  
