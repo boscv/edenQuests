@@ -23,7 +23,7 @@ Plugin de injeção de eventMacros para Quests e Equipamentos do Éden - Openkor
  
 ---
 
-## 📜 Quests Incluídas
+### 📜 Quests Incluídas
 
   - **Resgate de equipamentos** dos níveis 7 ao 160.
   - **Quests da Instrutora Boya** dos níveis 26, 33, 40 e 75.
@@ -38,7 +38,7 @@ Plugin de injeção de eventMacros para Quests e Equipamentos do Éden - Openkor
 
 ---
 
-## 🤖 Funções Principais:
+### 🤖 Funções Principais:
 
   - **Mudança de classe** para 1ª classe, e 2ª classe à transclasse.
   - **Rotas de UP** para agilizar e facilitar seu trabalho.
@@ -64,7 +64,7 @@ Plugin de injeção de eventMacros para Quests e Equipamentos do Éden - Openkor
 
 ---
 
-## 📝 Instruções:
+### 📝 Instruções:
 
   - Use **config.py** para configurar suas opções de quests, níveis, equipamentos, encantamentos, cartas e consumíveis.
     Nele, há explicações sobre cada configuração e suas respectivas funções.
@@ -74,7 +74,7 @@ Plugin de injeção de eventMacros para Quests e Equipamentos do Éden - Openkor
 
 ---
 
-## 🛠️ Configurações necessárias:
+### 🛠️ Configurações necessárias:
 
 * **config.txt**:
   - *statsAddAuto* *skillsAddAuto* definidos para o personagem upar atributos/skills.
@@ -87,7 +87,7 @@ Plugin de injeção de eventMacros para Quests e Equipamentos do Éden - Openkor
 
 ---
 
-## ⚠️ O que não fazer:
+### ⚠️ O que não fazer:
 
   - *'reload eventMacros'*, *'reload all'* durante a execução do plugin.
   - **Jamais apague as variáveis** criadas pelo/para o plugin em **config.txt**, salvo necessidade
@@ -97,7 +97,7 @@ Plugin de injeção de eventMacros para Quests e Equipamentos do Éden - Openkor
 
 ---
 
-## 📢 Informações e avisos:
+### 📢 Informações e avisos:
 
   - O **eventMacros.txt** injetado é atualizado diariamente, qualquer bug ou erro, favor informar.
   - No caso das classes principais, a quest de nível 60 só é feita após mudança para  2ª classe. A quest até pode ser feita pelas 1ªs classes principais, mas não receberão equipamentos após a conclusão até a mudança para 2ª classe.
@@ -117,7 +117,7 @@ Plugin de injeção de eventMacros para Quests e Equipamentos do Éden - Openkor
 
 ---
 
-## 🗃️ Estrutura da pasta:
+### 🗃️ Estrutura da pasta:
 
 - openkore-master/
   * 📁 control/
@@ -145,6 +145,8 @@ Plugin de injeção de eventMacros para Quests e Equipamentos do Éden - Openkor
 * Quests do Éden faltantes dos níveis 12, 20 e 50.
 * Quests diárias 120+.
 * Mais quests de mudança de classe.
+
+---
 
 ### 🤝 Apoie o projeto
 * O edenEquips é gratuito e continuará gratuito.
