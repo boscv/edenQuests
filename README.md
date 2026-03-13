@@ -149,7 +149,8 @@ Plugin de injeção de eventMacros para Quests e Equipamentos do Éden - Openkor
 ---
 
 ### 🤝 Apoie o projeto
-* O edenEquips é gratuito e continuará gratuito.
+* O edenQuests é gratuito e continuará gratuito.
+* O plugin, macros e configurações foram criados ao longo de meses de trabalho.
 * Se ele te ajudou e você quiser contribuir, pode apoiar via Pix:
 <img src=https://i.postimg.cc/DzNhY2JN/support.png width="200" height="200">
 [4717fdb1-345a-4d5a-aab5-067f7ef8789a]
