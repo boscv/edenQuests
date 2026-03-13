@@ -18,7 +18,7 @@ Plugin de injeção de eventMacros para Quests e Equipamentos do Éden - Openkor
 - [📢 Informações e avisos](#-informa%C3%A7%C3%B5es-e-avisos)
 - [🗃️ Estrutura da pasta](#%EF%B8%8F-estrutura-da-pasta)
 - [🚀 Implementações futuras](#-implementa%C3%A7%C3%B5es-futuras)
-- [🤝 Apoie o projeto](#apoie-o-projeto)
+- [🤝 Apoie o projeto](#-apoie-o-projeto)
 
  
 ---
@@ -146,7 +146,7 @@ Plugin de injeção de eventMacros para Quests e Equipamentos do Éden - Openkor
 * Quests diárias 120+.
 * Mais quests de mudança de classe.
 
-### 🤝Apoie o projeto
+### 🤝 Apoie o projeto
 * O edenEquips é gratuito e continuará gratuito.
 * Se ele te ajudou e você quiser contribuir, pode apoiar via Pix:
 <img src=https://i.postimg.cc/DzNhY2JN/support.png width="200" height="200">
