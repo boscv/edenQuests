@@ -1,7 +1,8 @@
 ## ⚜️ edenQuests v2.5 (LATAM)
-[<img alt="Static Badge" target="_blank" src="https://img.shields.io/badge/Discord-.boscv-%237289DA?logo=discord&logoColor=%23fff">](https://discord.com/users/boscv.)\
-[<img alt="Static Badge" src="https://img.shields.io/badge/Discord-Openkore%20LATAM-%237289DA?logo=discord&logoColor=%23fff">](https://discord.com/channels/1396892709775605922)\
-[<img alt="Static Badge" src="https://img.shields.io/badge/F%C3%B3rum-Openkore%20LATAM-%23ec8736?logo=phpBB&logoColor=%23fff">](https://openkore.com.br/)
+[<img alt="Static Badge" src="https://img.shields.io/badge/GitHub-Openkore-%0FBF3E?logo=discord&logoColor=%23fff">](https://github.com/OpenKore/openkore)\
+[<img alt="Static Badge" src="https://img.shields.io/badge/GitHub-GordoKore-%0FBF3E?logo=discord&logoColor=%23fff">](https://github.com/Brunnexo/GordoKore)\
+[<img alt="Static Badge" target="_blank" src="https://img.shields.io/badge/Discord-boscv.-%237289DA?logo=discord&logoColor=%23fff">](https://discord.com/users/boscv.)\
+[<img alt="Static Badge" src="https://img.shields.io/badge/Discord-Openkore%20LATAM-%237289DA?logo=discord&logoColor=%23fff">](https://discord.gg/SNJ4qGn8)
 
 Plugin de injeção de eventMacros para Quests e Equipamentos do Éden - Openkore (ROla)
 
