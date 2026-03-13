@@ -1,4 +1,4 @@
-import sys, io, os, json, base64, hashlib
+import sys, io, os, json, base64, hashlib, ipaddress
 from urllib.request import Request, urlopen
 from urllib.error import HTTPError, URLError
 
@@ -27,7 +27,40 @@ eden_path = os.path.join(BASE_DIR, "edenQuests.pl")
 hash_proxy = sha256sum(proxy_path) or "missing"
 hash_eden = sha256sum(eden_path) or "missing"
 
-CLIENT_TAG = "hwid_disabled"
+def is_valid_ipv4(value):
+    try:
+        ip = ipaddress.ip_address(value)
+        return isinstance(ip, ipaddress.IPv4Address)
+    except ValueError:
+        return False
+
+
+def fetch_public_ip():
+    services = (
+        "https://api4.ipify.org",
+        "https://ipv4.icanhazip.com",
+        "https://ifconfig.me/ip",
+    )
+
+    for service_url in services:
+        req = Request(service_url, headers={"User-Agent": "edenQuests/1.0"}, method="GET")
+        try:
+            with urlopen(req, timeout=8) as resp:
+                body = resp.read().decode("utf-8", errors="ignore").strip()
+                if is_valid_ipv4(body):
+                    return body
+        except Exception:
+            continue
+
+    return None
+
+
+public_ip = fetch_public_ip()
+if not public_ip:
+    print("ERR: failed to resolve public ip", file=sys.stderr)
+    sys.exit(7)
+
+CLIENT_TAG = f"ip:{public_ip}"
 
 def call_rpc_get_macro(supabase_url, anon_key, hwid, hash_proxy, hash_eden):
     url = supabase_url.rstrip("/") + "/rest/v1/rpc/get_macro_for_client"

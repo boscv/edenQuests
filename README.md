@@ -71,7 +71,6 @@ Plugin de injeção de eventMacros para Quests de Classe e Quests de Equipamento
     Nele, há explicações sobre cada configuração e suas respectivas funções.
   - Adicione *edenQuests* em **sys.txt** no final da linha *loadPlugins_list*.
   - Em caso de necessidade de reinjeção, use *'plugin reload edenQuests'* no console.
-  - O HWID é gerado após o personagem estar online.
 
 ---
 
@@ -115,6 +114,7 @@ Plugin de injeção de eventMacros para Quests de Classe e Quests de Equipamento
   - A injeção não sobrescreverá seu **eventMacros.txt**. De qualquer forma, sempre bom manter um backup.
   - O plugin não é configurado pra comprar ou fazer uso de pots de sp. Mas pegará do armazém ou
     comprará mais antes de começar qualquer quest, e usará, se seu bot estiver configurado para isso.
+  - Acessos abusivos podem ser barrados pelo servidor.
 
 ---
 
