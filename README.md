@@ -3,21 +3,21 @@
 [<img alt="Static Badge" src="https://img.shields.io/badge/Discord-Openkore%20LATAM-%237289DA?logo=discord&logoColor=%23fff">](https://discord.com/channels/1396892709775605922)\
 [<img alt="Static Badge" src="https://img.shields.io/badge/F%C3%B3rum-Openkore%20LATAM-%23ec8736?logo=phpBB&logoColor=%23fff">](https://openkore.com.br/)
 
-Plugin de injeção de eventMacros para Quests e Equipamentos do Éden - Openkore (Servidor Latam)\
-HWID necessário para ativação.
+Plugin de injeção de eventMacros para Quests e Equipamentos do Éden - Openkore (ROla)
 
 ---
 
 ### 📚 Sumário
-- [📜 Quests Incluídas](#-quests-inclu%C3%ADdas-para-todas-as-classes)
+- [📜 Quests Incluídas](#-quests-inclu%C3%ADdas)
 - [🤖 Funções Principais](#-fun%C3%A7%C3%B5es-principais)
 - [⚙️ Requisitos](#%EF%B8%8F-requisitos)
 - [📝 Instruções](#-instru%C3%A7%C3%B5es)
-- [🛠️ Configurações necessárias](#%EF%B8%8F-configura%C3%A7%C3%B5es-necess%C3%A1rias-para-boa-execu%C3%A7%C3%A3o-do-plugin)
+- [🛠️ Configurações necessárias](#%EF%B8%8F-configura%C3%A7%C3%B5es-necess%C3%A1rias)
 - [⚠️ O que não fazer](#%EF%B8%8F-o-que-n%C3%A3o-fazer)
 - [📢 Informações e avisos](#-informa%C3%A7%C3%B5es-e-avisos)
 - [🗃️ Estrutura da pasta](#%EF%B8%8F-estrutura-da-pasta)
 - [🚀 Implementações futuras](#-implementa%C3%A7%C3%B5es-futuras)
+- [🤝 Apoie o projeto](#-apoie-o-projeto)
 
  
 ---
@@ -73,7 +73,7 @@ HWID necessário para ativação.
 
 ---
 
-## 🛠️ O que você precisa fazer:
+## 🛠️ Configurações necessárias:
 
 * **config.txt**:
   - *statsAddAuto* *skillsAddAuto* definidos para o personagem upar atributos/skills.
@@ -148,4 +148,7 @@ HWID necessário para ativação.
 ### 🤝Apoie o projeto
 * O edenEquips é gratuito e continuará gratuito.
 * Se ele te ajudou e você quiser contribuir, pode apoiar via Pix:
+<img src=https://i.postimg.cc/DzNhY2JN/support.png width="200" height="200">
+[4717fdb1-345a-4d5a-aab5-067f7ef8789a]
+
 
