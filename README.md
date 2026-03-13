@@ -4,7 +4,8 @@
 [<img alt="Static Badge" target="_blank" src="https://img.shields.io/badge/Discord-boscv.-%237289DA?logo=discord&logoColor=%23fff">](https://discord.com/users/boscv.)\
 [<img alt="Static Badge" src="https://img.shields.io/badge/Discord-Openkore%20LATAM-%237289DA?logo=discord&logoColor=%23fff">](https://discord.gg/SNJ4qGn8)
 
-Plugin de injeção de eventMacros para Quests e Equipamentos do Éden - Openkore (ROla)
+Plugin de injeção de eventMacros para Quests de Classe e Quests de Equipamentos do Éden.\
+**Openkore (ROla)**
 
 ---
 
