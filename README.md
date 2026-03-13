@@ -1,4 +1,4 @@
-## ⚜️ edenEquips v2.4.1 (LATAM)
+## ⚜️ edenQuests v2.5 (LATAM)
 [<img alt="Static Badge" target="_blank" src="https://img.shields.io/badge/Discord-.boscv-%237289DA?logo=discord&logoColor=%23fff">](https://discord.com/users/boscv.)\
 [<img alt="Static Badge" src="https://img.shields.io/badge/Discord-Openkore%20LATAM-%237289DA?logo=discord&logoColor=%23fff">](https://discord.com/channels/1396892709775605922)\
 [<img alt="Static Badge" src="https://img.shields.io/badge/F%C3%B3rum-Openkore%20LATAM-%23ec8736?logo=phpBB&logoColor=%23fff">](https://openkore.com.br/)
@@ -56,11 +56,10 @@ HWID necessário para ativação.
 ## ⚙️ Requisitos:
 
   - Python
-  - [Automacro aeroplano](https://openkore.com.br/viewtopic.php?p=6470) *ra_fild12*.
-  - [Plugin eventMacros](https://github.com/dhmello/openkore_latam/tree/main/openkore-master/plugins/eventMacro) atualizado. 
-  - [Plugin mapNormalizer](https://github.com/dhmello/openkore_latam/tree/main/openkore-master/plugins/mapNormalizer) ativado no **sys.txt**
+  - [Plugin eventMacros](https://github.com/OpenKore/openkore/tree/master/plugins/eventMacro) atualizado. 
+  - [Plugin mapNormalizer](https://github.com/boscv/openkore/blob/master/plugins/mapNormalizer/mapNormalizer.pl) ativado no **sys.txt**
   - Se não existir, criar um arquivo **eventMacros.txt** na pasta **./control.**
-  - Pasta [./fields e portals.txt](https://github.com/dhmello/openkore_latam) atualizados.
+  - [./fields](https://github.com/boscv/openkore/tree/master/fields/ROla) e [portals.txt](https://github.com/OpenKore/openkore/blob/master/tables/ROla/portals.txt) atualizados.
 
 ---
 
@@ -68,8 +67,8 @@ HWID necessário para ativação.
 
   - Use **config.py** para configurar suas opções de quests, níveis, equipamentos, encantamentos, cartas e consumíveis.
     Nele, há explicações sobre cada configuração e suas respectivas funções.
-  - Adicione *edenEquips* em **sys.txt** no final da linha *loadPlugins_list*.
-  - Em caso de necessidade de reinjeção, use *'plugin reload edenEquips'* no console.
+  - Adicione *edenQuests* em **sys.txt** no final da linha *loadPlugins_list*.
+  - Em caso de necessidade de reinjeção, use *'plugin reload edenQuests'* no console.
   - O HWID é gerado após o personagem estar online.
 
 ---
@@ -92,14 +91,14 @@ HWID necessário para ativação.
   - *'reload eventMacros'*, *'reload all'* durante a execução do plugin.
   - **Jamais apague as variáveis** criadas pelo/para o plugin em **config.txt**, salvo necessidade
     de rollback por falha na execução de etapas do macro, ou a remoção do plugin.
-  - **Não faça alterações** no **proxy.py** ou **edenEquips.pl**. O acesso é barrado pelo servidor
+  - **Não faça alterações** no **proxy.py** ou **edenQuests.pl**. O acesso é barrado pelo servidor
     em caso de qualquer modificação ou ausência dos arquivos.
 
 ---
 
 ## 📢 Informações e avisos:
 
-  - O eventMacros injetado é atualizado diariamente, qualquer bug ou erro, favor informar.
+  - O **eventMacros.txt** injetado é atualizado diariamente, qualquer bug ou erro, favor informar.
   - No caso das classes principais, a quest de nível 60 só é feita após mudança para  2ª classe. A quest até pode ser feita pelas 1ªs classes principais, mas não receberão equipamentos após a conclusão até a mudança para 2ª classe.
   - A maior parte das classes foi testada, e as armas estão em sua maioria, se não todas,
     nas posições corretas. (Opções extraídas de .csv)
@@ -125,12 +124,12 @@ HWID necessário para ativação.
     * 📄 sys.txt
   * 📁 fields/
   * 📁 plugins/
-    * 📁 edenEquips/
+    * 📁 edenQuests/
       * 📄 README.md
-      * 📄 atualizador-edenEquips.bat
-      * 📄 atualizador-edenEquips.ps1
+      * 📄 atualizador-edenQuests.bat
+      * 📄 atualizador-edenQuests.ps1
       * 📄 config.py
-      * 📄 edenEquips.pl
+      * 📄 edenQuests.pl
       * 📄 proxy.py
     * 📁 mapNormalizer
       * 📄 mapNormalizer.pl
@@ -145,3 +144,8 @@ HWID necessário para ativação.
 * Quests do Éden faltantes dos níveis 12, 20 e 50.
 * Quests diárias 120+.
 * Mais quests de mudança de classe.
+
+### 🤝Apoie o projeto
+* O edenEquips é gratuito e continuará gratuito.
+* Se ele te ajudou e você quiser contribuir, pode apoiar via Pix:
+

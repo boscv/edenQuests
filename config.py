@@ -1,4 +1,4 @@
-# GUI de configuração para edenEquips
+# GUI de configuração para edenQuests
 
 import os
 import re
@@ -839,8 +839,8 @@ TAB_DEFS = [
     ]),
 ]
 
-BLOCK_BEGIN = "# --- Configurações do edenEquips --- BEGIN\n"
-BLOCK_END   = "\n# --- Configurações do edenEquips --- END"
+BLOCK_BEGIN = "# --- Configurações do edenQuests --- BEGIN\n"
+BLOCK_END   = "\n# --- Configurações do edenQuests --- END"
 
 # ==============================
 # Utilidades de arquivo config
@@ -919,7 +919,7 @@ class ConfigApp(tk.Tk):
         super().__init__()
 
         # Janela
-        self.title("[edenEquips] Configurador ")
+        self.title("[edenQuests] Configurador ")
         self.geometry(f"{WINDOW_WIDTH}x{WINDOW_HEIGHT}")
         self.minsize(MIN_WIDTH, MIN_HEIGHT)
 
@@ -999,7 +999,7 @@ class ConfigApp(tk.Tk):
 
         lbl = ttk.Label(
             self,
-            text="[edenEquips] CONFIGURADOR \nInsira/Escolha os valores nos campos. *use (vazio) para limpar configurações*",
+            text="[edenQuests] CONFIGURADOR \nInsira/Escolha os valores nos campos. *use (vazio) para limpar configurações*",
             anchor="w",
             style="Header.TLabel",
         )

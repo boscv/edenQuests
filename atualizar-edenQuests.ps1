@@ -1,11 +1,11 @@
-# atualizar-edenEquips.ps1
+# atualizar-edenQuests.ps1
 # Atualiza a pasta onde este arquivo está com o conteúdo do repositório:
-# https://github.com/billabong93/edenEquips
+# https://github.com/billabong93/edenQuests
 
 $ErrorActionPreference = 'Stop'
 
 $repoOwner = 'billabong93'
-$repoName  = 'edenEquips'
+$repoName  = 'edenQuests'
 $branch    = 'main'
 
 # Pasta onde o script está (pasta do plugin)
@@ -45,7 +45,7 @@ try {
     Remove-Item $tmpPath -Recurse -Force -ErrorAction SilentlyContinue
 
     Write-Host ""
-    Write-Host "Concluido! edenEquips atualizado com sucesso." -ForegroundColor Green
+    Write-Host "Concluido! edenQuests atualizado com sucesso." -ForegroundColor Green
     Write-Host ""
     Read-Host "Pressione ENTER para fechar"
 

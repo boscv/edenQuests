@@ -1,4 +1,4 @@
-package edenEquips;
+package edenQuests;
 
 use strict;
 use warnings;
@@ -12,7 +12,7 @@ use Cwd qw(getcwd abs_path);
 use Encode qw(decode);
 use Globals qw($char);
 
-Plugins::register('edenEquips', 'Quests do Grupo Éden', \&onUnload);
+Plugins::register('edenQuests', 'Quests do Grupo Éden', \&onUnload);
 
 my $plugin_dir  = dirname(abs_path(__FILE__));
 my $supabase_url = "https://bnjjwtbjanjkledoiwem.supabase.co";
@@ -33,13 +33,13 @@ sub maybe_inject_macros {
     my ($macro_file, $macro_display) = resolve_macro_destination();
 
     unless (-e $macro_file) {
-        warning "[edenEquips] Arquivo $macro_file não encontrado. Abortando.\n";
+        warning "[edenQuests] Arquivo $macro_file não encontrado. Abortando.\n";
         return;
     }
 
     $injection_in_progress = 1;
 
-    message "[edenEquips] Preparando $macro_display para injeção...\n";
+    message "[edenQuests] Preparando $macro_display para injeção...\n";
 
     if (update_proxy_and_inject($macro_file)) {
         $injection_done = 1;
@@ -73,13 +73,13 @@ sub update_proxy_and_inject {
     return 0 if $res != 0;
 
     if ($decoded !~ /automacro|timeout|call\s*\{/) {
-        warning "[edenEquips] Não parece um eventMacro — abortando. Prévia: "
+        warning "[edenQuests] Não parece um eventMacro — abortando. Prévia: "
             . substr($decoded,0,200) . "\n";
         return 0;
     }
 
     unless (-e $macro_file) {
-        warning "[edenEquips] Arquivo $macro_file não encontrado. Abortando.\n";
+        warning "[edenQuests] Arquivo $macro_file não encontrado. Abortando.\n";
         return 0;
     }
 
@@ -88,11 +88,11 @@ sub update_proxy_and_inject {
 
     if (open my $out, ">", $macro_file) {
         print $out $original;
-        print $out "\n\n# --- [edenEquips] NÃO DELETE ---\n";
+        print $out "\n\n# --- [edenQuests] NÃO DELETE ---\n";
         print $out $decoded;
         close $out;
     } else {
-        warning "[edenEquips] Falha ao escrever $macro_file\n";
+        warning "[edenQuests] Falha ao escrever $macro_file\n";
         return 0;
     }
 
@@ -102,7 +102,7 @@ sub update_proxy_and_inject {
         print $rf $original;
         close $rf;
     } else {
-        warning "[edenEquips] Falha ao restaurar $macro_file\n";
+        warning "[edenQuests] Falha ao restaurar $macro_file\n";
     }
 
     return 1;
@@ -128,7 +128,7 @@ sub onUnload {
     $injection_in_progress = 0;
     $auth_status           = 'unknown';
 
-    message "[edenEquips] Plugin descarregado.\n";
+    message "[edenQuests] Plugin descarregado.\n";
 }
 
 sub fetch_macro_payload {
@@ -136,7 +136,7 @@ sub fetch_macro_payload {
     my $py_script = File::Spec->catfile($plugin_dir, "proxy.py");
     my $cmd = qq("$python_cmd" "$py_script" "$supabase_url" "$anon_key");
 
-    message "[edenEquips] Executando (stdout) ...\n" unless $quiet;
+    message "[edenQuests] Executando (stdout) ...\n" unless $quiet;
 
     my $output = `$cmd 2>&1`;
     my $res = $? >> 8;
@@ -145,12 +145,12 @@ sub fetch_macro_payload {
 
     if ($res != 0) {
         unless ($quiet) {
-            warning "[edenEquips] HWID - Acesso negado. stderr:\n$output\n";
+            warning "[edenQuests] Acesso negado. stderr:\n$output\n";
             if ($output =~ /hash_mismatch/i) {
-                warning "[edenEquips] Atualize o plugin:\n";
-                warning "[GitHub] https://github.com/billabong93/edenEquips\n";
+                warning "[edenQuests] Atualize o plugin:\n";
+                warning "[GitHub] https://github.com/billabong93/edenQuests\n";
             } else {
-                warning "[edenEquips] Envie o HWID para ativação:\n";
+                warning "[edenQuests] Verifique sua licença com o suporte:\n";
                 warning "[Discord] https://discord.com/users/boscv. \n";
             }
         }
