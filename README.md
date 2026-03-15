@@ -4,7 +4,7 @@
 [<img alt="Static Badge" target="_blank" src="https://img.shields.io/badge/Discord-boscv.-%237289DA?logo=discord&logoColor=%23fff">](https://discord.com/users/boscv.)\
 [<img alt="Static Badge" src="https://img.shields.io/badge/Discord-Openkore%20LATAM-%237289DA?logo=discord&logoColor=%23fff">](https://discord.gg/SNJ4qGn8)
 
-Plugin de injeção de eventMacros para Quests de Classe e Quests de Equipamentos do Éden.\
+eventMacros para Quests de Classe e Quests de Equipamentos do Éden.\
 **Openkore (ROla)**
 
 ---
@@ -57,7 +57,6 @@ Plugin de injeção de eventMacros para Quests de Classe e Quests de Equipamento
 
 ### ⚙️ Requisitos:
 
-  - Python
   - [Plugin eventMacros](https://github.com/OpenKore/openkore/tree/master/plugins/eventMacro) atualizado. 
   - [Plugin mapNormalizer](https://github.com/boscv/openkore/blob/master/plugins/mapNormalizer/mapNormalizer.pl) ativado no **sys.txt**
   - Se não existir, criar um arquivo **eventMacros.txt** na pasta **./control.**
@@ -69,8 +68,6 @@ Plugin de injeção de eventMacros para Quests de Classe e Quests de Equipamento
 
   - Use **config.py** para configurar suas opções de quests, níveis, equipamentos, encantamentos, cartas e consumíveis.
     Nele, há explicações sobre cada configuração e suas respectivas funções.
-  - Adicione *edenQuests* em **sys.txt** no final da linha *loadPlugins_list*.
-  - Em caso de necessidade de reinjeção, use *'plugin reload edenQuests'* no console.
   - É da responsabilidade do usuário definir [stats e skills](https://openkore.com/wiki/statsAddAuto), além da compra de itens fora de quests.
 
 ---
@@ -90,17 +87,13 @@ Plugin de injeção de eventMacros para Quests de Classe e Quests de Equipamento
 
 ### ⚠️ O que não fazer:
 
-  - *'reload eventMacros'*, *'reload all'* durante a execução do plugin.
-  - **Jamais apague as variáveis** criadas pelo/para o plugin em **config.txt**, salvo necessidade
+  - **Jamais apague as variáveis** criadas pelo/para o eventMacro em **config.txt**, salvo necessidade
     de rollback por falha na execução de etapas do macro, ou a remoção do plugin.
-  - **Não faça alterações** no **proxy.py** ou **edenQuests.pl**. O acesso é barrado pelo servidor
-    em caso de qualquer modificação ou ausência dos arquivos.
 
 ---
 
 ### 📢 Informações e avisos:
 
-  - O **eventMacros.txt** injetado é atualizado diariamente, qualquer bug ou erro, favor informar.
   - No caso das classes principais, a quest de nível 60 só é feita após mudança para  2ª classe. A quest até pode ser feita pelas 1ªs classes principais, mas não receberão equipamentos após a conclusão até a mudança para 2ª classe.
   - A maior parte das classes foi testada, e as armas estão em sua maioria, se não todas,
     nas posições corretas. (Opções extraídas de .csv)
@@ -111,12 +104,10 @@ Plugin de injeção de eventMacros para Quests de Classe e Quests de Equipamento
     em *teleportAuto_item1*.
   - Apesar de interceptado, o bot continuará usando qualquer skill ou item configurado no
     seu **config.txt**, **macros.txt** e **eventMacros.txt**.
-  - O plugin depende do seu *storageAuto_npc* configurado, configure um, caso não use a opção de rotas.
-  - A injeção não sobrescreverá seu **eventMacros.txt**. De qualquer forma, sempre bom manter um backup.
-  - O plugin não é configurado pra comprar ou fazer uso de pots de sp. Mas pegará do armazém ou
+  - O eventMacro depende do seu *storageAuto_npc* configurado, configure um, caso não use a opção de rotas.
+  - O eventMacros não é configurado pra comprar ou fazer uso de pots de sp. Mas pegará do armazém ou
     comprará mais antes de começar qualquer quest, e usará, se seu bot estiver configurado para isso.
   - Você pode verificar a [checklist](checklist.md) de condições para saber porque alguma automacro não está ativando.
-  - Acessos abusivos podem ser barrados pelo servidor.
 
 ---
 
@@ -125,7 +116,6 @@ Plugin de injeção de eventMacros para Quests de Classe e Quests de Equipamento
 - openkore-master/
   * 📁 control/
     * 📄 eventMacros.txt
-    * 📄 sys.txt
   * 📁 fields/
   * 📁 plugins/
     * 📁 edenQuests/
@@ -133,8 +123,8 @@ Plugin de injeção de eventMacros para Quests de Classe e Quests de Equipamento
       * 📄 atualizador-edenQuests.bat
       * 📄 atualizador-edenQuests.ps1
       * 📄 config.py
-      * 📄 edenQuests.pl
-      * 📄 proxy.py
+    * 📁 eventMacro
+      * 📄 eventMacro.pl
     * 📁 mapNormalizer
       * 📄 mapNormalizer.pl
   * 📁 tables/
@@ -153,7 +143,7 @@ Plugin de injeção de eventMacros para Quests de Classe e Quests de Equipamento
 
 ### 🤝 Apoie o projeto
 * O edenQuests é gratuito e continuará gratuito.
-* O plugin, macros e configurações foram criados ao longo de meses de trabalho.
+* As macros e configurações foram criados ao longo de meses de trabalho.
 * Se ele te ajudou e você quiser contribuir, pode apoiar via Pix:
 <img src=https://i.postimg.cc/DzNhY2JN/support.png width="200" height="200">
 [4717fdb1-345a-4d5a-aab5-067f7ef8789a]
